@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Resume Analysis</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='result.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Resume Analysis Complete</h1>
+
+    <div class="card">
+
+        <h2>📄 {{ filename }}</h2>
+
+        <hr>
+
+        <h3>Predicted Category</h3>
+
+        <h2 class="category">
+            {{ category }}
+        </h2>
+
+        <hr>
+
+        <h3>Confidence</h3>
+
+        <div class="progress">
+
+            <div class="progress-bar"
+                 style="width: {{ confidence }}%;">
+
+                {{ confidence }}%
+
+            </div>
+
+        </div>
+
+          <hr>
+
+<h3>ATS Score</h3>
+
+<div class="progress">
+
+    <div class="progress-bar"
+         style="width: {{ ats }}%;">
+
+        {{ ats }}%
+
+    </div>
+
+</div>
+
+<hr>
+
+<h3>Detected Skills</h3>
+
+{% for skill in skills %}
+
+<span class="badge">
+
+{{ skill }}
+
+</span>
+
+{% endfor %}
+
+<hr>
+
+<h3>Missing Skills</h3>
+
+{% for skill in missing %}
+
+<span class="missing">
+
+{{ skill }}
+
+</span>
+
+{% endfor %}
+
+<hr>
+
+<h3>Suggestions</h3>
+
+
+<div class="suggestions">
+
+{% for suggestion in suggestions %}
+
+<div class="suggestion">
+
+✔ {{ suggestion }}
+
+</div>
+
+{% endfor %}
+
+</div>
+        <br>
+
+        <a href="/" class="button">
+            Analyze Another Resume
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>

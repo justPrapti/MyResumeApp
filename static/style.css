@@ -1,0 +1,47 @@
+body{
+
+    background:#0f172a;
+
+    color:white;
+
+    font-family:Arial;
+
+}
+
+.container{
+
+    margin-top:80px;
+
+    text-align:center;
+
+}
+
+.title{
+
+    font-size:50px;
+
+    font-weight:bold;
+
+}
+
+.subtitle{
+
+    color:#94a3b8;
+
+    margin-bottom:50px;
+
+}
+
+.upload-card{
+
+    background:#1e293b;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    width:650px;
+
+    margin:auto;
+
+}
