@@ -152,8 +152,3 @@ The model classifies resumes into multiple job categories based on the extracted
 - Transformer-based models (BERT)
 - Cloud deployment
 
----
-
-## Author
-
-**Prapti Kambli**
