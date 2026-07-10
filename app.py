@@ -98,8 +98,6 @@ def clean_resume(text):
     return text
 
 
-resume_text = extract_text(filepath)
-
 if __name__ == "__main__":
     app.run(debug=True)
 
